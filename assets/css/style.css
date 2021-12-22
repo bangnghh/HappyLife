@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px; } }
+html, body {
+  font-family: "Nunito", sans-serif !important;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    color: inherit; }
+
+a, button {
+  transition: 0.3s; }
+
+p {
+  margin: 0; }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+.header-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 120px;
+  background-position-y: -200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/happylife/resources/homepage-bg.svg"); }
+
+.navbar {
+  background-color: transparent;
+  height: 100px; }
+  .navbar .navbar-brand .logo {
+    width: 82px;
+    height: 62px; }
+  .navbar .nav-item .nav-link {
+    color: #6E757A;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    margin-right: 48px; }
+  .navbar .nav-item .dropdown-toggle:after {
+    vertical-align: middle; }
+  .navbar .nav-item .fa-search {
+    color: white !important;
+    font-size: 14px; }
+  .navbar .navbar-nav {
+    display: flex;
+    margin-right: 0px !important; }
+    .navbar .navbar-nav .dropdown-menu {
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      display: block;
+      height: 0;
+      padding: 0; }
+      .navbar .navbar-nav .dropdown-menu .dropdown-item {
+        font-weight: 600; }
+    .navbar .navbar-nav .dropdown-menu.show {
+      transition: all 0.3s ease;
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      padding: auto; }
+  .navbar .nav-register .btn-light {
+    background-color: #3AAA35;
+    border-radius: 15px;
+    border: 1px solid #3AAA35;
+    height: 50px;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 26px;
+    padding-right: 26px; }
+  .navbar .navbar-collapse {
+    z-index: 10;
+    background-color: transparent; }
+  .navbar .active {
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D71B8 !important; }
+
+.welcome-container {
+  margin-top: 120px; }
+  .welcome-container .two-phone {
+    max-width: 630px; }
+  .welcome-container .ic_2phone_1 {
+    position: absolute;
+    top: 60%;
+    left: 0; }
+  .welcome-container .ic_2phone_2 {
+    position: absolute;
+    top: 0%;
+    left: 50%; }
+  .welcome-container .ic_2phone_3 {
+    position: absolute;
+    top: 55%;
+    right: 0; }
+  .welcome-container .icon-box {
+    width: 190px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 32px 8px 32px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; }
+    .welcome-container .icon-box .icon {
+      width: 20px;
+      height: 20px; }
+  .welcome-container .welcome-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    color: #104776; }
+  .welcome-container .welcome-title2 {
+    max-width: 500px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #647C91; }
+  .welcome-container .btn-reg {
+    margin-top: 40px;
+    background-color: #3AAA35;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 26px 13px 26px;
+    border: 1px solid #3AAA35;
+    border-radius: 15px; }
+
+.abt-happystation-container {
+  width: 100%;
+  height: 830px;
+  text-align: center; }
+  .abt-happystation-container .blue-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 275px;
+    width: 100%;
+    height: 420px;
+    background-color: #1B75BC; }
+  .abt-happystation-container .abt-box {
+    padding-top: 20px;
+    background-color: white;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .abt-happystation-container .abt-box .abt-box-title {
+      margin-top: 40px;
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #3AAA35; }
+    .abt-happystation-container .abt-box .abt-box-text {
+      margin-top: 18px;
+      max-width: 324px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1A1B1D; }
+
+.dot-title-wrapper {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .dot-title-wrapper .text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    color: #104776; }
+  .dot-title-wrapper .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #1D71B8;
+    margin: 0 10px 0 10px; }
+
+.blk-text {
+  margin-top: 32px;
+  max-width: 535px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1A1B1D;
+  margin-left: auto;
+  margin-right: auto; }
+
+.black-text {
+  margin-top: 24px;
+  max-width: 646px;
+  color: #1A1B1D;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */
