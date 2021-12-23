@@ -271,3 +271,51 @@ p{
   font-size: 18px;
   line-height: 24px;
 }
+.four-box-container{
+  margin-top: 48px;
+  .first-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 952px;
+  }
+  .item-box{
+    margin-left: auto; margin-right: auto;
+    width: 97%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    img{
+      width: 100%;
+      position: absolute; top: 0; left: 0;
+      z-index: 0;
+    }
+    .blur-box{
+      bottom: 0; left: 0;
+      position: absolute;
+      z-index: 1;
+      width: 100%; height: 207px;
+      background-image: linear-gradient(0, rgba(29, 113, 184, 0.9), rgba(29, 113, 184, 0));
+    }
+    .text{
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      bottom: 32px;
+      left: 0;
+      text-align: center;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 32px;
+      color: white;
+    }
+  }
+  .lower{
+    margin-top: 32px;
+  }
+}
+.member-reg-container{
+  margin-top: 100px;
+}
