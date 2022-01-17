@@ -212,12 +212,14 @@ p{
     background-color: #1B75BC;
   }
   .abt-box{
+    position: relative;
     padding-top: 20px;
     background-color: white;
     height: 520px;
     padding-bottom: 44px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
     img {
       margin: 0 auto;
     }
@@ -239,6 +241,23 @@ p{
       font-size: 16px;
       line-height: 24px;
       color: $main-black;
+    }
+    .hair-decorator{
+      position: absolute;
+      top: -3.4rem;
+      left: -6rem;
+      img{
+        max-width: 12.7rem;
+      }
+    }
+    .greendot-decorator{
+      position: absolute; top: 10rem; left: -7rem;
+    }
+    .bluedot-decorator{
+      position: absolute; top: -3.8rem; right: 50%;
+    }
+    .half-donut-decorator{
+      position: absolute; top: -4.8rem; right: 2rem;
     }
   }
 }
