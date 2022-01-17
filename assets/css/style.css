@@ -1,11 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+html {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+input,
+textarea,
+select,
+button {
+  outline: none; }
+
+input {
+  line-height: normal; }
+
+label,
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
 @media (min-width: 1440px) {
   .container {
-    max-width: 1320px; } }
+    max-width: 1216px; } }
 html, body {
   font-family: "Nunito", sans-serif !important;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #F8F8F8; }
 
 a {
   text-decoration: none;
@@ -26,26 +59,26 @@ p {
 .header-container {
   width: 100%;
   height: auto;
-  padding-bottom: 120px;
-  background-position-y: -200px;
-  background-size: cover;
+  background-position-y: -2rem;
+  background-position-x: -5rem;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url("/happylife/resources/homepage-bg.svg"); }
 
 .navbar {
   background-color: transparent;
-  height: 100px; }
+  height: 10rem; }
   .navbar .navbar-brand .logo {
-    width: 82px;
-    height: 62px; }
+    width: 8.2rem;
+    height: 6.2rem; }
   .navbar .nav-item .nav-link {
     color: #6E757A;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 24px;
     display: inline-block;
-    margin-right: 48px; }
+    margin-right: 4.8rem; }
   .navbar .nav-item .dropdown-toggle:after {
     vertical-align: middle; }
   .navbar .nav-item .fa-search {
@@ -80,7 +113,8 @@ p {
     font-size: 18px;
     line-height: 24px;
     padding-left: 26px;
-    padding-right: 26px; }
+    padding-right: 26px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   .navbar .navbar-collapse {
     z-index: 10;
     background-color: transparent; }
@@ -105,7 +139,7 @@ p {
     left: 50%; }
   .welcome-container .ic_2phone_3 {
     position: absolute;
-    top: 55%;
+    top: 60%;
     right: 0; }
   .welcome-container .icon-box {
     width: 190px;
@@ -145,17 +179,25 @@ p {
     line-height: 24px;
     padding: 13px 26px 13px 26px;
     border: 1px solid #3AAA35;
-    border-radius: 15px; }
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .abt-happystation-container {
+  margin-top: 150px;
   width: 100%;
   height: 830px;
   text-align: center; }
+  .abt-happystation-container .container {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0; }
   .abt-happystation-container .blue-box {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: 0;
     margin-top: 275px;
     width: 100%;
     height: 420px;
@@ -164,8 +206,11 @@ p {
     padding-top: 20px;
     background-color: white;
     height: 520px;
+    padding-bottom: 44px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .abt-happystation-container .abt-box img {
+      margin: 0 auto; }
     .abt-happystation-container .abt-box .abt-box-title {
       margin-top: 40px;
       text-align: center;
@@ -239,7 +284,8 @@ p {
     height: 460px;
     position: relative;
     overflow: hidden;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
     .four-box-container .item-box img {
       width: 100%;
       position: absolute;
@@ -271,5 +317,77 @@ p {
 
 .member-reg-container {
   margin-top: 100px; }
+  .member-reg-container .reg-tag-wrapper {
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px; }
+    .member-reg-container .reg-tag-wrapper .box {
+      position: relative;
+      width: 384px;
+      height: 614px;
+      border-radius: 30px;
+      padding-top: 84px; }
+      .member-reg-container .reg-tag-wrapper .box .subscription-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center; }
+      .member-reg-container .reg-tag-wrapper .box .title-left {
+        color: #E3A22D; }
+      .member-reg-container .reg-tag-wrapper .box .title-right {
+        color: #158B10; }
+      .member-reg-container .reg-tag-wrapper .box .sub-title {
+        margin-top: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #888888;
+        text-align: center; }
+      .member-reg-container .reg-tag-wrapper .box .pricing {
+        margin-top: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 240px; }
+      .member-reg-container .reg-tag-wrapper .box .common-text {
+        margin-top: 14px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #1A1B1D; }
+    .member-reg-container .reg-tag-wrapper .left {
+      background-color: rgba(227, 162, 45, 0.2);
+      margin-right: 16px; }
+    .member-reg-container .reg-tag-wrapper .right {
+      background-color: rgba(57, 181, 74, 0.2);
+      margin-left: 16px; }
+    .member-reg-container .reg-tag-wrapper .icon-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      border: 5px solid white;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .member-reg-container .reg-tag-wrapper .icon-circle img {
+        max-width: 64px; }
+    .member-reg-container .reg-tag-wrapper .icon-left {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), linear-gradient(0deg, #E3A22D, #E3A22D); }
+    .member-reg-container .reg-tag-wrapper .icon-right {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), linear-gradient(0deg, #39B54A, #39B54A); }
+
+.article-container {
+  margin-top: 10rem; }
 
 /*# sourceMappingURL=style.css.map */
