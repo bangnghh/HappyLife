@@ -42,9 +42,8 @@ p{
   height: auto;
   background-position-y: -2rem;
   background-position-x: -5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("/happylife/resources/homepage-bg.svg");
+  background-size: cover!important;
+  background: url("/happylife/resources/homepage-bg.svg")no-repeat;
 }
 
 .navbar{
@@ -111,6 +110,10 @@ p{
       padding-left: 26px;
       padding-right: 26px;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      &:hover{
+        background-color: $second-color-hover;
+        border-color: $second-color-hover;
+      }
     }
   }
 
@@ -188,12 +191,16 @@ p{
     border: 1px solid $second-color;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &:hover{
+      background-color: $second-color-hover;
+      border-color: $second-color-hover;
+    }
   }
 }
 .abt-happystation-container{
-  margin-top: 150px;
+  margin-top: 120px;
   width: 100%;
-  height: 830px;
+  height: 83rem;
   text-align: center;
 
   .container{
@@ -211,6 +218,39 @@ p{
     height: 420px;
     background-color: #1B75BC;
   }
+  .quote-box{
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 5.4rem;
+    padding-bottom: 2.4rem; padding-top: 2.4rem;
+    width: 100%;
+    height: 16.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    linear-gradient(0deg, #1B75BC, #1B75BC);
+    .quote-text{
+      max-width: 85.6rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: $text-second;
+    }
+    .quote-up{
+      align-self: flex-start;
+      margin-right: 3rem;
+      img{
+        width: 3.6rem; height: 3.2rem;
+      }
+    }
+    .quote-down{
+      align-self: flex-end;
+      margin-left: 3rem;
+      img{
+        width: 3.6rem; height: 3.2rem;
+      }
+    }
+  }
   .abt-box{
     position: relative;
     padding-top: 20px;
@@ -218,7 +258,7 @@ p{
     height: 520px;
     padding-bottom: 44px;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
 
     img {
       margin: 0 auto;
@@ -518,5 +558,124 @@ p{
       margin-right: 1.2rem;
     }
   }
+}
+
+.nav-container{
+  background-color: white;
+}
+.banner-container{
+  position: relative;
+  width: 100%;
+  height: 64.5rem;
+  .gray-box{
+    position: absolute;
+    display: flex; align-items: center; justify-content: center;
+    width: 73.5rem;
+    height: 15.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 28, 28, 0.25);
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    .gray-box-text{
+      max-width: 68rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+//About happy station
+.about-banner{
+  background: url("/happylife/resources/about-banner.png")no-repeat;
+  background-size: cover;
+}
+
+//Contact
+.contact-banner{
+  background: url("/happylife/resources/contact-banner.png")no-repeat;
+  background-size: cover;
+}
+.contact-info-container{
+  margin-top: 10rem;
+  .block-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: $main-black
+  }
+  .block{
+    margin-top: 4.8rem;
+    .block-item{
+      margin-top: 2.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: start; justify-content: flex-start;
+      .icon{
+        margin-right: 1.6rem;
+        width: 3.2rem; height: 3.2rem; border-radius: 1.8rem;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        linear-gradient(0deg, #1B75BC, #1B75BC);
+        display: flex; align-items: center; justify-content: center;
+        img{
+          width: 100%; height: 1.4rem;
+        }
+      }
+      .info{
+        .info-title{
+          padding-top: 3px;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 24px;
+          color: $main-black;
+        }
+        .info-text{
+          max-width: 53.8rem;
+          margin-top: 1.4rem;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          color: $main-black;
+        }
+      }
+      .social-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        .social-item{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          margin-right: 5rem;
+          img{
+            margin-right: 1rem;
+          }
+          .social-text{
+            font-size: 20px;
+            line-height: 24px;
+            color: $main-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Register
+.register-banner{
+  background: url("/happylife/resources/register-banner.png")no-repeat;
+  background-size: cover;
+}
+.faq-container{
+  margin-top: 10rem;
 }
 

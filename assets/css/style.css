@@ -15,7 +15,8 @@ input,
 textarea,
 select,
 button {
-  outline: none; }
+  outline: none;
+  transition: 0.1s; }
 
 input {
   line-height: normal; }
@@ -61,9 +62,8 @@ p {
   height: auto;
   background-position-y: -2rem;
   background-position-x: -5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("/happylife/resources/homepage-bg.svg"); }
+  background-size: cover !important;
+  background: url("/happylife/resources/homepage-bg.svg") no-repeat; }
 
 .navbar {
   background-color: transparent;
@@ -115,6 +115,9 @@ p {
     padding-left: 26px;
     padding-right: 26px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .navbar .nav-register .btn-light:hover {
+      background-color: #43c43f;
+      border-color: #43c43f; }
   .navbar .navbar-collapse {
     z-index: 10;
     background-color: transparent; }
@@ -181,11 +184,14 @@ p {
     border: 1px solid #3AAA35;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .welcome-container .btn-reg:hover {
+      background-color: #43c43f;
+      border-color: #43c43f; }
 
 .abt-happystation-container {
-  margin-top: 150px;
+  margin-top: 120px;
   width: 100%;
-  height: 830px;
+  height: 83rem;
   text-align: center; }
   .abt-happystation-container .container {
     position: absolute;
@@ -202,6 +208,37 @@ p {
     width: 100%;
     height: 420px;
     background-color: #1B75BC; }
+  .abt-happystation-container .quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.4rem;
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
+    width: 100%;
+    height: 16.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #1B75BC, #1B75BC); }
+    .abt-happystation-container .quote-box .quote-text {
+      max-width: 85.6rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #104776; }
+    .abt-happystation-container .quote-box .quote-up {
+      align-self: flex-start;
+      margin-right: 3rem; }
+      .abt-happystation-container .quote-box .quote-up img {
+        width: 3.6rem;
+        height: 3.2rem; }
+    .abt-happystation-container .quote-box .quote-down {
+      align-self: flex-end;
+      margin-left: 3rem; }
+      .abt-happystation-container .quote-box .quote-down img {
+        width: 3.6rem;
+        height: 3.2rem; }
   .abt-happystation-container .abt-box {
     position: relative;
     padding-top: 20px;
@@ -209,7 +246,7 @@ p {
     height: 520px;
     padding-bottom: 44px;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px; }
     .abt-happystation-container .abt-box img {
       margin: 0 auto; }
     .abt-happystation-container .abt-box .abt-box-title {
@@ -486,5 +523,109 @@ p {
     justify-content: flex-start; }
     .footer-container .badge-wrapper .first-item {
       margin-right: 1.2rem; }
+
+.nav-container {
+  background-color: white; }
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 64.5rem; }
+  .banner-container .gray-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 73.5rem;
+    height: 15.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 28, 28, 0.25);
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem; }
+    .banner-container .gray-box .gray-box-text {
+      max-width: 68rem;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 40px;
+      text-align: center;
+      color: white; }
+
+.about-banner {
+  background: url("/happylife/resources/about-banner.png") no-repeat;
+  background-size: cover; }
+
+.contact-banner {
+  background: url("/happylife/resources/contact-banner.png") no-repeat;
+  background-size: cover; }
+
+.contact-info-container {
+  margin-top: 10rem; }
+  .contact-info-container .block-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #1A1B1D; }
+  .contact-info-container .block {
+    margin-top: 4.8rem; }
+    .contact-info-container .block .block-item {
+      margin-top: 2.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: flex-start; }
+      .contact-info-container .block .block-item .icon {
+        margin-right: 1.6rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 1.8rem;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #1B75BC, #1B75BC);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .contact-info-container .block .block-item .icon img {
+          width: 100%;
+          height: 1.4rem; }
+      .contact-info-container .block .block-item .info .info-title {
+        padding-top: 3px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #1A1B1D; }
+      .contact-info-container .block .block-item .info .info-text {
+        max-width: 53.8rem;
+        margin-top: 1.4rem;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1A1B1D; }
+      .contact-info-container .block .block-item .social-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem; }
+        .contact-info-container .block .block-item .social-wrapper .social-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          margin-right: 5rem; }
+          .contact-info-container .block .block-item .social-wrapper .social-item img {
+            margin-right: 1rem; }
+          .contact-info-container .block .block-item .social-wrapper .social-item .social-text {
+            font-size: 20px;
+            line-height: 24px;
+            color: #1A1B1D; }
+
+.register-banner {
+  background: url("/happylife/resources/register-banner.png") no-repeat;
+  background-size: cover; }
+
+.faq-container {
+  margin-top: 10rem; }
 
 /*# sourceMappingURL=style.css.map */
