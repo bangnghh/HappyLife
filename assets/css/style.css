@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 html {
   box-sizing: border-box; }
 
@@ -486,6 +487,13 @@ p {
       line-clamp: 2;
       -webkit-box-orient: vertical; }
 
+.user-recommend-container {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, #1B75BC, #1B75BC);
+  margin-top: 10rem;
+  padding-top: 8.3rem;
+  padding-bottom: 7.6rem; }
+
 .footer-container {
   margin-top: 10rem;
   background-color: white;
@@ -661,6 +669,97 @@ p {
   background-size: cover; }
 
 .faq-container {
+  margin-top: 10rem; }
+
+.product-intro-container .intro {
+  margin-top: 12.6rem; }
+  .product-intro-container .intro .intro-title {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    font-feature-settings: 'liga' off;
+    color: #104776; }
+  .product-intro-container .intro .intro-detail {
+    padding-top: 1.6rem;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #18191F; }
+  .product-intro-container .intro .right-img {
+    width: 100%;
+    height: auto; }
+
+.production-main-feature {
+  margin-top: 10rem;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  background-color: #1D71B8; }
+  .production-main-feature .title-desc {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 64.6rem;
+    color: #FFFFFF; }
+  .production-main-feature .box-wrapper {
+    margin-top: 7.4rem; }
+    .production-main-feature .box-wrapper .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    .production-main-feature .box-wrapper .white-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 17.6rem;
+      height: 17.6rem;
+      background-color: white;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 25px; }
+      .production-main-feature .box-wrapper .white-box img {
+        width: 10rem;
+        height: 10rem; }
+    .production-main-feature .box-wrapper .col-title {
+      margin-top: 4.9rem;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: center;
+      color: #FFFFFF; }
+    .production-main-feature .box-wrapper .col-desc {
+      max-width: 32.4rem;
+      margin-top: 1.4rem;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF; }
+
+.product-audio-book {
+  margin-top: 10rem; }
+  .product-audio-book .right-img {
+    width: 100%;
+    max-width: 62.6rem;
+    height: auto; }
+
+.product-course {
+  margin-top: 10rem; }
+
+.product-podcast {
   margin-top: 10rem; }
 
 /*# sourceMappingURL=style.css.map */
